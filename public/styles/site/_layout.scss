@@ -13,22 +13,215 @@ svg {
     border-radius: 30px;
   }
   rect:hover {
-    fill-opacity: 0.05;
+    fill-opacity: 0.1;
   }
 }
-
 .darker {
   stroke: #444;
 }
 
-#footer {
-	margin-top: 30px;
-	padding-top: 30px;
-	color: #777777;
+.newCursor {
+  cursor: pointer;
+}
+.change_scale:hover {
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
 }
 
 .gallery-image img{
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.whiteBackground {
+  overflow: auto;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  padding: 15px;
+  border: 1px solid #a3a3a3;
+  opacity: 0.7;
+}
+
+.bio-text-and-image {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.bio-text {
+  width: 100%;
+  padding: 15px;
+}
+
+.bio-img {
+  width: 100%;
+  padding: 15px;
+}
+
+.wikipedia_background {
+  background-color: #e6e6e6;
+  /* position: relative; */
+  padding: 15px;
+  border: 1px solid #a3a3a3;
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.button_section {
+  width: 100%;
+  padding: 15px;
+}
+
+.button_style {
+  background-color: #e3e3e3;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #af0101;
+  cursor: pointer;
+}
+
+.thumbnail {
+  border: none;
+	padding: 0 5px;
+  background-color: white;
+  z-index: 1;
+  padding: 15px;
+  border-left: 1px solid #a3a3a3;
+  opacity: 0.9;
+  border-radius: 0;
+}
+
+.thumbnail:hover {
+	transition: 0.6s ease;
+  background-color: #ffb3b3;
+}
+
+.work-titles {
+	width: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.work-images {
+  width: 100%;
+  height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.work-image {
+	padding-top: 30px;
+}
+
+.work-year {
+	padding: 10px 0;
+}
+
+.work-description {
+	font-style: italic;
+	padding: 10px 0;
+}
+
+.video-player {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.pulsate {
+  box-shadow: 0 0 10px #333;
+  animation-name: pusate;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  padding-top: 0;
+  padding-right: 5px;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-align: right;
+  vertical-align: top;
+  color: #999;
+
+}
+@keyframes pusate {
+    from { box-shadow: 0 0 1px #444; }
+    to { box-shadow: 0 0 3px #af0101; }
+}
+
+#follow_me {
+  padding: 5px;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.7;
+  width: auto;
+  height: auto;
+  left: 4%;
+  bottom: 4%;
+
+  i {
+    font-size: 20px;
+    padding-right: 10px;
+    color: black;
+  }
+  i:hover {
+    color: #af0101;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  #follow_me i {
+  font-size: 24px;
+  }
+
+  .bio-text {
+    width: 50%;
+    float: left;
+  }
+  .bio-img {
+    width: 50%;
+    float: left;
+    padding: 30px;
+  }
+
+  .infoDiv {
+    width: 50%;
+  }
+  .videoDiv video {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  #contact_form form {
+    width: 50%;
+    float: left;
+  }
+  .contact_img {
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+
 }

@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block content
+	.whiteBackground#works
+		if works.length
+			each work in works
+				.col-xs-12.col-sm-6.col-md-4.thumbnail
+					a(href= "/works/" + work._id)
+						.work-titles
+							h4= work.title
+							if work.subtitle
+								h5= work.subtitle
+							h5= work._.date.format("YYYY")
+						.work-images(style="background-image: url("+ work.image.secure_url +");")
+		else
+			.whiteBackground#works
+				h3.text-muted There are no works to be displayed.
+
+block js
+	script containerDimensions(3, 9, 97, 83, "works");

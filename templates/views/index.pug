@@ -1,4 +1,11 @@
 extends ../layouts/default
 
 block content
-	
+	div#rects
+
+
+block js
+	script(src="/js/tone/tone.min.js")
+	script(src="/js/tone/startAudioContext.js")
+	script(src="/js/home/music.js")
+	script createHouse(); createSpeaker();

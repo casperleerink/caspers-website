@@ -157,7 +157,7 @@ function createMenu (topY, bottomY, midY, topYperc, bottomYperc, midYperc) {
   workSet.attr({class : "darker"});
 
   var workRect = s.rect(xArr[leftX[0] + 23].attr("x1"), topYperc, (xNumberArr[leftX[0] + 37] - xNumberArr[leftX[0] + 23] ) + "%", (bottomY[1] - topY[1]) + "%");
-  var linkWork = s.el("a").attr({"xlink:href" : "works"});
+  var linkWork = s.el("a").attr({"xlink:href" : "/works"});
   workRect.appendTo(linkWork);
   workRect.attr({fill : grad2})
 

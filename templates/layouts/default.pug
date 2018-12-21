@@ -14,6 +14,8 @@ html
 
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
 		link(href="/styles/site.css", rel="stylesheet")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
@@ -68,10 +70,15 @@ html
 
 
 		//- FOOTER
-		.container: #footer
+		.container: #follow_me
 			//- p this is a footer
-
-
+			a(href="https://soundcloud.com/casper-leerink" target="_blank")
+				i.fa.fa-soundcloud
+			a(href="https://www.linkedin.com/in/casper-leerink-551392aa/" target="_blank")
+				i.fa.fa-linkedin
+			a(href="https://github.com/casperleerink" target="_blank")
+				i.fa.fa-github
+			
 		//- JAVASCRIPT
 
 		//- jQuery 1.11.3 is included by default, and required by both Bootstrap

@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block content
+	.whiteBackground#bio
+		.bio
+			.bio-text
+				h1= bio.title
+				h4= bio.subtitle
+				p!= bio.description
+			.bio-img
+				img(src=bio.image.secure_url).img-responsive.change_scale
+		.button_section
+			button.button_style#newWikipediaComposer Generate New Composer
+		.wikipedia_background#wikipedia_background
+			h1#wiki_section Want to read more?
+			h5 Here is another 21st century composer for you:
+			div#wikipedia_content
+			br
+			p: em (source: Wikipedia.org)
+
+    
+	    
+block js
+	script containerDimensions(3, 13, 97, 85, "bio");
+	script(src="js/wiki_api.js")
