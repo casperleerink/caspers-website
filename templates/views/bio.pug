@@ -2,21 +2,22 @@ extends ../layouts/default
 
 block content
 	.whiteBackground#bio
-		.bio
-			.bio-text
+		.row
+			.col-xs-12.col-sm-6
 				h1= bio.title
 				h4= bio.subtitle
 				p!= bio.description
-			.bio-img
+			.col-xs-12.col-sm-6
 				img(src=bio.image.secure_url).img-responsive.change_scale
-		.button_section
-			button.button_style#newWikipediaComposer Generate New Composer
-		.wikipedia_background#wikipedia_background
-			h1#wiki_section Want to read more?
-			h5 Here is another 21st century composer for you:
-			div#wikipedia_content
-			br
-			p: em (source: Wikipedia.org)
+		.row
+			.col-xs-12
+				h1#wiki_section Want to read more?
+				h5 Here is another 21st century composer for you:
+				button.button_style#newWikipediaComposer Generate New Composer
+				.wikipedia_background#wikipedia_background
+					div#wikipedia_content
+					br
+					p.source_wiki: em (source: Wikipedia.org)
 
     
 	    

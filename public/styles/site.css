@@ -5834,6 +5834,19 @@ svg {
     border-radius: 30px; }
   svg rect:hover {
     fill-opacity: 0.1; }
+  svg line:hover {
+    stroke: #444; }
+
+input, textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 0;
+  font-size: 12px; }
+
+label {
+  font-size: 1.4rem; }
 
 .darker {
   stroke: #444; }
@@ -5883,10 +5896,6 @@ svg {
   margin-top: 15px;
   margin-bottom: 15px; }
 
-.button_section {
-  width: 100%;
-  padding: 15px; }
-
 .button_style {
   background-color: #e3e3e3;
   border: none;
@@ -5897,6 +5906,9 @@ svg {
   font-size: 16px;
   color: #af0101;
   cursor: pointer; }
+
+.source_wiki {
+  color: #af0101; }
 
 .thumbnail {
   border: none;
@@ -5925,7 +5937,7 @@ svg {
   background-size: cover; }
 
 .work-image {
-  padding-top: 30px; }
+  padding-top: 20px; }
 
 .work-year {
   padding: 10px 0; }

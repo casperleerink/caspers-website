@@ -55,4 +55,3 @@ function removeExternalLinks () {
 var newWikipediaComposer = document.getElementById("newWikipediaComposer").addEventListener("click", function () {
   getComposerList();
 });
-getComposerList();
