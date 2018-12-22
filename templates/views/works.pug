@@ -4,17 +4,37 @@ block content
 	.whiteBackground#works
 		if works.length
 			each work in works
-				.col-xs-12.col-sm-6.col-md-4.thumbnail
-					a(href= "/works/" + work._id)
-						.work-titles
-							h4= work.title
-							if work.subtitle
-								h5= work.subtitle
-							h5= work._.date.format("YYYY")
-						.work-images(style="background-image: url("+ work.image.secure_url +");")
+				if work.image.secure_url
+					.col-xs-12.col-sm-6.col-md-4
+						.thumbnail
+							a(href= "/works/" + work._id)
+								.work-titles
+									h4= work.title
+									if work.subtitle
+										h5= work.subtitle
+									h5= work._.date.format("YYYY")
+								.work-images(style="background-image: url("+ work.image.secure_url +");")
+			.row
+				.col-xs-12
+					h2 Full Works List
+					button.button_style#works_list_table_button Show/Hide
+					p For sheet music and performance instructions contact me 
+						a(href="/contact") here.
+					.table-responsive
+						table.col-xs-12#works_list_table
+							tr
+								th Title
+								th Instrumentation
+								th Year
+							each work in works
+								tr
+									td= work.title
+									td= work.instrumentation
+									td= work._.date.format("YYYY")
 		else
 			.whiteBackground#works
 				h3.text-muted There are no works to be displayed.
 
 block js
-	script containerDimensions(3, 9, 97, 83, "works");
+	script containerDimensions(1, 9, 99, 85, "works");
+	script(src="/js/works.js")

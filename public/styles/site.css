@@ -5835,7 +5835,28 @@ svg {
   svg rect:hover {
     fill-opacity: 0.1; }
   svg line:hover {
-    stroke: #444; }
+    stroke: #ffb3b3; }
+
+a {
+  color: #af0101; }
+
+a:hover {
+  color: #ffb3b3; }
+
+table {
+  border: 1px solid #e6e6e6; }
+
+tr:hover {
+  background-color: #ffb3b3; }
+
+th {
+  background-color: #e6e6e6; }
+
+td,
+th {
+  border-bottom: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  padding: 5px; }
 
 input, textarea {
   margin-bottom: 10px;
@@ -5900,6 +5921,7 @@ label {
   background-color: #e3e3e3;
   border: none;
   padding: 15px 32px;
+  margin-bottom: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -5912,13 +5934,13 @@ label {
 
 .thumbnail {
   border: none;
-  padding: 0 5px;
+  padding: 5px;
   background-color: white;
   z-index: 1;
-  padding: 15px;
-  border-left: 1px solid #a3a3a3;
+  padding: 10px;
   opacity: 0.9;
-  border-radius: 0; }
+  border-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .thumbnail:hover {
   transition: 0.6s ease;
@@ -5959,6 +5981,9 @@ label {
     left: 0;
     width: 100%;
     height: 100%; }
+
+#works_list_table {
+  display: none; }
 
 .pulsate {
   box-shadow: 0 0 10px #333;
