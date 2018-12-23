@@ -22,6 +22,21 @@ block content
 					.video-player!= work.video_url
 				img(src=work.image.secure_url).img-responsive.work-image
 			.col-xs-12.col-sm-6.bottom-padding
+				.giveHeight
+					.whiteBackground#small1
+						img(src=work.image.secure_url)
+					.whiteBackground#small2
+						h1= work.title
+					.whiteBackground#small3
+						if work.description
+							.work-description
+								p!= work.description
+					.whiteBackground#small4
+						if work.date
+							h5= work._.date.format("YYYY")
+						if work.instrumentation
+							h6 For  
+								span= work.instrumentation
 
 block js
 	script(src="/js/work.js")

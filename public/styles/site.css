@@ -5875,6 +5875,12 @@ label {
 .newCursor {
   cursor: pointer; }
 
+.bottom-padding {
+  padding-bottom: 20px; }
+
+.giveHeight {
+  min-height: 400px; }
+
 .change_scale:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1); }
@@ -5892,6 +5898,9 @@ label {
   padding: 15px;
   border: 1px solid #a3a3a3;
   opacity: 0.7; }
+
+#small1, #small2, #small3, #small4 {
+  padding: 0; }
 
 .bio-text-and-image {
   width: 100%;
@@ -6012,8 +6021,8 @@ label {
   opacity: 0.7;
   width: auto;
   height: auto;
-  left: 4%;
-  bottom: 4%; }
+  left: 3%;
+  bottom: 1%; }
   #follow_me i {
     font-size: 20px;
     padding-right: 10px;
