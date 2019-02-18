@@ -1,9 +1,9 @@
-var keystone = require('keystone');
+const keystone = require('keystone');
 
 exports = module.exports = function (req, res) {
 
-	var view = new keystone.View(req, res);
-	var locals = res.locals;
+	const view = new keystone.View(req, res);
+	const locals = res.locals;
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
@@ -11,7 +11,7 @@ exports = module.exports = function (req, res) {
 
 	view.on('init', function (next) {
 
-		var biography = keystone.list('Bio').model.find();
+		const biography = keystone.list('Bio').model.find();
 
 		biography.exec(function (err, result) {
 			locals.bio = result[0];
