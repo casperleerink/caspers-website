@@ -1,11 +1,9 @@
 # caspers-website
-My Personal Website including interactive music
+This is my old personal website that included interactive music as well as a showcase of my work as an artist.
 
 Using:
 Keystone
 Snap.svg
 Tone.js
 
-available at: [casperleerink.com](http://casperleerink.com)
-
-Make some music on the home page by clicking on the rectangles!
+Unfortunately this website is no longer available.
